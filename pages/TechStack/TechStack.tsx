@@ -20,7 +20,7 @@ import {
 } from "@icons-pack/react-simple-icons";
 import { Box } from "@chakra-ui/layout";
 
-export const TechStack = () => {
+const TechStack = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.skills}>Skills</h1>
@@ -109,3 +109,5 @@ export const TechStack = () => {
     </div>
   );
 };
+
+export default TechStack;

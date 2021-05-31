@@ -2,7 +2,7 @@ import { Container, Box } from "@chakra-ui/react";
 import React from "react";
 import styles from "./Bio.module.scss";
 
-export const Bio: React.FC = () => {
+const Bio: React.FC = () => {
   return (
     <div className={styles.container}>
       <Box className={styles.bio}>
@@ -35,3 +35,5 @@ export const Bio: React.FC = () => {
     </div>
   );
 };
+
+export default Bio;

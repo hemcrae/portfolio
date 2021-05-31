@@ -3,7 +3,7 @@ import React from "react";
 import { Box } from "@chakra-ui/layout";
 import { Github } from "@icons-pack/react-simple-icons";
 
-export const Projects: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>Projects</h1>
@@ -59,3 +59,5 @@ export const Projects: React.FC = () => {
     </div>
   );
 };
+
+export default Projects;

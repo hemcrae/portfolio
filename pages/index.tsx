@@ -1,9 +1,9 @@
 import { StylesProvider } from "@chakra-ui/system";
 import { Hero } from "../components/Hero/Hero";
-import { Bio } from "./Bio/Bio";
+import Bio from "./Bio/Bio";
 import styles from "./index.module.scss";
-import { Projects } from "./Projects/Projects";
-import { TechStack } from "./TechStack/TechStack";
+import Projects from "./Projects/Projects";
+import TechStack from "./TechStack/TechStack";
 
 const Home = () => {
   return (
