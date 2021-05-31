@@ -1,0 +1,27 @@
+@use '../../styles/partials/variables.scss' as *;
+
+.container {
+  width: 100%;
+  padding: 4rem;
+  background-color: $alice-blue;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: $space-cadet;
+}
+
+.header {
+  font-size: 2rem;
+  font-family: $bitter;
+}
+
+.content {
+  padding: 1.5rem 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}

@@ -1,4 +1,10 @@
-export const particlesConfig = {
+import { RecursivePartial } from "tsparticles";
+import { IOptions } from "tsparticles/dist/Interfaces/Options/IOptions";
+
+export const particlesConfig: RecursivePartial<IOptions> = {
+  background: {
+    color: "#2b2d42",
+  },
   particles: {
     number: {
       value: 80,
@@ -8,13 +14,13 @@ export const particlesConfig = {
       },
     },
     color: {
-      value: "#343a40",
+      value: "#FFF",
     },
     shape: {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#000000",
+        color: "#FFF",
       },
       polygon: {
         nb_sides: 5,
@@ -43,7 +49,7 @@ export const particlesConfig = {
     line_linked: {
       enable: true,
       distance: 100,
-      color: "#010001",
+      color: "#8d99ae",
       opacity: 0.4,
       width: 1,
     },

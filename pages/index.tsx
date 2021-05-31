@@ -1,9 +1,24 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import { StylesProvider } from "@chakra-ui/system";
+import { Hero } from "../components/Hero/Hero";
+import { Bio } from "./Bio/Bio";
+import styles from "./index.module.scss";
+import { Projects } from "./Projects/Projects";
+import { TechStack } from "./TechStack/TechStack";
 
 const Home = () => {
-  return <></>;
+  return (
+    <>
+      <Hero>
+        <div className={styles.home}>
+          <h1 className={styles.heading}>Hi, I'm Halley McRae.</h1>
+          <h2 className={styles.headingSmall}>Web Developer</h2>
+        </div>
+      </Hero>
+      <Bio />
+      <TechStack />
+      <Projects />
+    </>
+  );
 };
 
 export default Home;

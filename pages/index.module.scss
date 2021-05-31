@@ -1,0 +1,21 @@
+@use '../styles/partials/variables.scss' as *;
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 4rem;
+  color: $alice-blue;
+  font-family: $scope-one;
+}
+
+.headingSmall {
+  font-size: 2rem;
+  color: $alice-blue;
+  font-family: $scope-one;
+}
