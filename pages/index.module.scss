@@ -1,5 +1,10 @@
 @use '../styles/partials/variables.scss' as *;
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .home {
   height: 100vh;
   display: flex;
@@ -8,14 +13,36 @@
   align-items: center;
 }
 
+.topWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
 .heading {
   font-size: 4rem;
   color: $alice-blue;
   font-family: $scope-one;
+  font-weight: 400;
+  padding-bottom: 1rem;
 }
 
 .headingSmall {
   font-size: 2rem;
   color: $alice-blue;
   font-family: $scope-one;
+  font-weight: 400;
+}
+
+.wrap {
+  bottom: 0;
+}
+
+.headingWelcome {
+  font-size: 1.5rem;
+  padding: 4rem;
+  font-family: $scope-one;
+  font-weight: 400;
 }

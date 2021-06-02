@@ -1,4 +1,5 @@
 @use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
 
 .container {
   width: 100%;
@@ -9,6 +10,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include tablet {
+    padding: 1.5rem;
+  }
+
+  @include desktop {
+    padding: 4rem;
+  }
 }
 
 .projects {
@@ -19,6 +28,7 @@
 
 .project {
   min-height: 200px;
+  max-width: 100%;
 }
 
 .contents {
@@ -27,17 +37,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
+}
+
+.contents:first-child {
+  border-right: 1px solid $cadet-crayon;
 }
 
 .header {
   font-family: $bitter;
   font-size: 2rem;
+  padding: 2rem;
 }
 
 .heading {
   padding-bottom: 2rem;
   font-family: $bitter;
+}
+
+.content {
 }
 
 .repoWrap {

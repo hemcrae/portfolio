@@ -31,17 +31,13 @@ const Projects: React.FC = () => {
             Auth0, Browser Notification API, SCSS and Material-UI.
           </p>
         </div>
+
         <div className={styles.contents}>
           <div className={styles.project}>
             <h2 className={styles.heading}>M.A.S.H Game</h2>
             <p className={styles.content}>
               An application that mirrors the classic middle school game called
-              M.A.S.H (Mansion, Apartment, Shack or House). There are four
-              categories: Spouse, Job, Animal and Transport. My project partner
-              and I built an API to populate the categories, each containing 6
-              options. The user selects 3 of the 6 options per category and
-              Submit button, randomly generates one of their chosen options for
-              each category.
+              M.A.S.H (Mansion, Apartment, Shack or House).
             </p>
           </div>
           <div className={styles.repoWrap}>

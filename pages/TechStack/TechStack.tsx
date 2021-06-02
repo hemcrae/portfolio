@@ -18,94 +18,103 @@ import {
   Sass,
   Npm,
 } from "@icons-pack/react-simple-icons";
-import { Box } from "@chakra-ui/layout";
+import { Box, Container, SimpleGrid } from "@chakra-ui/layout";
+
+const techList = [
+  {
+    name: "JavaScript",
+    Img: Javascript,
+  },
+  {
+    name: "TypeScript",
+    Img: Typescript,
+  },
+  {
+    name: "React",
+    Img: ReactJs,
+  },
+  {
+    name: "Next.js",
+    Img: NextDotJs,
+  },
+  {
+    name: "Node.js",
+    Img: NodeDotJs,
+  },
+  {
+    name: "Express",
+    Img: Express,
+  },
+  {
+    name: "Nest.js",
+    Img: Nestjs,
+  },
+  {
+    name: "HTML5",
+    Img: Html5,
+  },
+  {
+    name: "SASS",
+    Img: Sass,
+  },
+  {
+    name: "MongoDB",
+    Img: Mongodb,
+  },
+  {
+    name: "Auth0",
+    Img: Auth0,
+  },
+  {
+    name: "GitHub",
+    Img: Github,
+  },
+  {
+    name: "Netlify",
+    Img: Netlify,
+  },
+  {
+    name: "Material UI",
+    Img: MaterialUi,
+  },
+  {
+    name: "Chakra UI",
+    Img: Chakraui,
+  },
+  {
+    name: "NPM Libraries",
+    Img: Npm,
+  },
+  {
+    name: "Mongoose",
+  },
+  {
+    name: "Web API's",
+  },
+  {
+    name: "API's",
+  },
+  {
+    name: "User Auth",
+  },
+];
 
 const TechStack = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.skills}>Skills</h1>
-      <div className={styles.wrap}>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>JavaScript</h1>
-          <Javascript />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>TypeScript</h1>
-          <Typescript />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>React</h1>
-          <ReactJs />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Nextjs</h1>
-          <NextDotJs />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Node</h1>
-          <NodeDotJs />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Express</h1>
-          <Express />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Nestjs</h1>
-          <Nestjs />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>HTML5</h1>
-          <Html5 />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>SASS/SCSS</h1>
-          <Sass />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>SASS/SCSS</h1>
-          <Sass />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>MongoDB</h1>
-          <Mongodb />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Auth0</h1>
-          <Auth0 />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>GitHub</h1>
-          <Github />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Netlify</h1>
-          <Netlify />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Material UI</h1>
-          <MaterialUi />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Chakra UI</h1>
-          <Chakraui />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>NPM Libraries</h1>
-          <Npm />
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Mongoose</h1>
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>Web API's</h1>
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>API's</h1>
-        </Box>
-        <Box className={styles.box}>
-          <h1 className={styles.heading}>User Auth</h1>
-        </Box>
-      </div>
+      <SimpleGrid
+        className={styles.wrap}
+        templateColumns="repeat(4, 1fr)"
+        gap={6}
+      >
+        {techList.map((item) => (
+          <Box className={styles.box}>
+            {item.Img && <item.Img />}
+            <h3 className={styles.heading}>{item.name}</h3>
+          </Box>
+        ))}
+      </SimpleGrid>
     </div>
   );
 };
