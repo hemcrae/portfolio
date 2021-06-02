@@ -1,4 +1,5 @@
 @use '../styles/partials/variables.scss' as *;
+@use '../styles/partials/mixins.scss' as *;
 
 .container {
   display: flex;
@@ -6,6 +7,7 @@
 }
 
 .home {
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,27 +24,38 @@
 }
 
 .heading {
-  font-size: 4rem;
+  width: 100%;
+  font-size: 3rem;
   color: $alice-blue;
   font-family: $scope-one;
-  font-weight: 400;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
+
+  @include tablet {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .headingSmall {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: $alice-blue;
   font-family: $scope-one;
   font-weight: 400;
+  padding-bottom: 2rem;
+
+  @include tablet {
+    font-size: 2rem;
+  }
 }
 
 .wrap {
-  bottom: 0;
+  position: absolute;
+  bottom: 5rem;
 }
 
 .headingWelcome {
-  font-size: 1.5rem;
-  padding: 4rem;
+  font-size: 1rem;
   font-family: $scope-one;
+  color: $alice-blue;
   font-weight: 400;
 }

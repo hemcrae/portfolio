@@ -1,7 +1,23 @@
 @use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
 
 .hero {
   position: relative;
+  background-image: linear-gradient(
+    to left top,
+    #171823,
+    #1b1c29,
+    #1e202e,
+    #222434,
+    #26283a,
+    #282b3e,
+    #2b2d42,
+    #2d3046,
+    #2f3249,
+    #31344b,
+    #33364e,
+    #353851
+  );
 }
 
 .content {
@@ -23,12 +39,13 @@
   bottom: 0;
   padding: 1rem;
   width: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba($space-cadet, 1) 0%,
-    rgba($space-cadet, 1) 25%,
-    rgba(0, 212, 255, 0) 60%
-  );
+  background: transparent;
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba($space-cadet, 1) 0%,
+  //   rgba($space-cadet, 1) 25%,
+  //   rgba(0, 212, 255, 0) 60%
+  // );
   outline: none;
   border: none;
   color: #fff;

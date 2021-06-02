@@ -2,9 +2,9 @@ import { RecursivePartial } from "tsparticles";
 import { IOptions } from "tsparticles/dist/Interfaces/Options/IOptions";
 
 export const particlesConfig: RecursivePartial<IOptions> = {
-  background: {
-    color: "#2b2d42",
-  },
+  // background: {
+  //   color: "#2b2d42",
+  // },
   particles: {
     number: {
       value: 80,

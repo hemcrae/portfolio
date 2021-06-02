@@ -17,10 +17,14 @@
 }
 
 .wrap {
-  width: 70%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include tablet {
+    width: 70%;
+  }
 }
 
 .skills {
