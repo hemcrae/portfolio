@@ -1,27 +1,44 @@
 @use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
 
 .container {
   width: 100%;
-  padding: 4rem;
   background-color: $alice-blue;
+  padding: 2rem;
+
+  @include tablet {
+    padding: 4rem;
+  }
+}
+
+.wrap {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include tablet {
+    align-items: center;
+  }
+
+  @include desktop {
+    padding: 2rem 4rem;
+  }
 }
 
 .bio {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
   color: $space-cadet;
 }
 
 .header {
-  font-size: 2rem;
-  font-family: $bitter;
+  @include header;
+  padding-bottom: 1rem;
 }
 
 .content {
-  padding: 1.5rem 0 1.5rem 0;
-  font-size: 1rem;
-  line-height: 1.5;
+  @include med-text;
+  padding-top: 1rem;
 }

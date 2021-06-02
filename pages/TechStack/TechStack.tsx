@@ -103,11 +103,7 @@ const TechStack = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.skills}>Skills</h1>
-      <SimpleGrid
-        className={styles.wrap}
-        templateColumns="repeat(4, 1fr)"
-        gap={6}
-      >
+      <SimpleGrid className={styles.wrap} minChildWidth="125px" gap="20px">
         {techList.map((item) => (
           <Box className={styles.box}>
             {item.Img && <item.Img />}

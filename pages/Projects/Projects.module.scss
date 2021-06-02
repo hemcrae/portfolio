@@ -3,70 +3,85 @@
 
 .container {
   width: 100%;
-  padding: 4rem;
   background-color: $alice-blue;
   color: $space-cadet;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 
   @include tablet {
-    padding: 1.5rem;
-  }
-
-  @include desktop {
     padding: 4rem;
   }
 }
 
 .projects {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .project {
-  min-height: 200px;
+  min-height: 175px;
   max-width: 100%;
+
+  @include tablet {
+    min-height: 200px;
+  }
 }
 
 .contents {
-  width: 45%;
   display: flex;
+  max-width: 100%;
+  padding: 0 1.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
+
+  @include tablet {
+    width: 45%;
+    padding: 0 4rem;
+  }
 }
 
 .contents:first-child {
-  border-right: 1px solid $cadet-crayon;
+  border-bottom: 1px solid $cadet-crayon;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+
+  @include tablet {
+    border-right: 1px solid $cadet-crayon;
+    border-bottom: none;
+    margin-bottom: none;
+  }
 }
 
 .header {
   font-family: $bitter;
   font-size: 2rem;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .heading {
-  padding-bottom: 2rem;
-  font-family: $bitter;
+  @include small-subheader;
+  padding-bottom: 1rem;
 }
 
 .content {
+  @include med-text;
 }
 
-.repoWrap {
-  padding: 1rem;
-}
-
-.anchor {
-  font-weight: bold;
-}
+// .repoWrap {
+//   padding: 1rem;
+// }
 
 .smallHeading {
-  font-family: $bitter;
+  @include subheader;
   padding: 1rem;
 }

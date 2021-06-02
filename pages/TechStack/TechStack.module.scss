@@ -3,13 +3,17 @@
 
 .container {
   width: 100%;
-  padding: 4rem;
   background-color: $platinum;
   color: $space-cadet;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
+
+  @include tablet {
+    padding: 4rem;
+  }
 }
 
 .wrap {
