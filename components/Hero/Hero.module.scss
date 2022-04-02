@@ -1,5 +1,5 @@
-@use '../../styles/partials/variables.scss' as *;
-@use '../../styles/partials/mixins.scss' as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .hero {
   position: relative;
@@ -40,12 +40,6 @@
   padding: 1rem;
   width: 100%;
   background: transparent;
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba($space-cadet, 1) 0%,
-  //   rgba($space-cadet, 1) 25%,
-  //   rgba(0, 212, 255, 0) 60%
-  // );
   outline: none;
   border: none;
   color: #fff;
